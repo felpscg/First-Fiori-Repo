@@ -1,25 +1,84 @@
-# Getting Started
 
-Welcome to your new project.
+# Sistema de Gerenciamento de Produtos 🚀
 
-It contains these folders and files, following our recommended project layout:
+## Sobre o Projeto
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+Uma aplicação desenvolvida usando SAP Cloud Application Programming (CAP) com interface Fiori UI.
 
+## Funcionalidades ⭐
 
-## Next Steps
+-   Gerenciamento de Produtos e Fornecedores
+-   Dashboard Analítico em Tempo Real
+-   Controle de Estoque
+-   Acompanhamento de Fornecedores
+-   Visualização Interativa de Dados
+-   Integração com SAP Fiori UI
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+## Estrutura do Projeto 📁
+├── app/                    # Aplicações frontend
+│   └── fiori-app/         # Frontend SAP Fiori
+├── db/                    # Camada de banco de dados
+│   ├── schema.cds        # Modelos de dados
+│   └── data/             # Dados de exemplo
+├── srv/                  # Camada de serviço
+    ├── products.cds      # Definições de serviço
+    └── products.js       # Implementações de serviço
 
+## Pré-requisitos 🛠️
 
-## Learn More
+-   Node.js (versão LTS)
+-   SAP Cloud Application Programming (CAP) CLI
+-   UI5 CLI (para frontend Fiori)
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+## Início Rápido 🚀
+
+### 1. Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+### 2. Instale as dependências
+npm install
+
+### 3. Inicie o servidor
+cds watch
+
+### 4. Acesse a aplicação
+
+-   Backend:  http://localhost:4004
+-   Frontend:  http://localhost:4004/fiori-app/webapp/index.html
+
+## Serviços Disponíveis 📦
+
+### CatalogService
+
+-   `/catalog/Products`  - Gerenciamento de produtos
+-   `/catalog/Suppliers`  - Gerenciamento de fornecedores
+-   `/catalog/AnalyticsReport`  - Análises em tempo real
+
+## Desenvolvimento 💻
+
+### Backend
+
+-   Modelos:  schema.cds
+-   Serviços:  products.js
+-   Definições:  products.cds
+
+### Frontend
+
+-   Aplicação:  fiori-app
+-   UI Config:  `manifest.json`
+-   Middleware:  `ui5.yaml`
+
+## Documentação 📚
+
+-   CAP Documentation
+-   SAP Fiori
+-   UI5
+
+## Como Contribuir 🤝
+
+1.  Faça um fork do projeto
+2.  Crie sua branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4.  Push para a branch (`git push origin feature/AmazingFeature`)
+5.  Abra um Pull Request
